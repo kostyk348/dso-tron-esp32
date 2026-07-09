@@ -1,0 +1,10 @@
+menu "DSO-TRON Configuration"
+
+    config DSO_MAX_TASKS
+        int "Maximum number of tasks"
+        range 4 64
+        default 16
+        help
+            Maximum number of tasks that can be created.
+
+endmenu
