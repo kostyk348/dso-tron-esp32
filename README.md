@@ -1,5 +1,8 @@
 # DSO-TRON for ESP32
 
+[![CI](https://github.com/kostyk348/dso-tron-esp32/actions/workflows/ci.yml/badge.svg)](https://github.com/kostyk348/dso-tron-esp32/actions/workflows/ci.yml)
+
+
 Deterministic real-time OS for ESP32 (Xtensa LX6 dual-core) — ITRON 4.0 inspired.
 Static allocation, lock-free IPC, preemptive scheduling, no heap.
 
