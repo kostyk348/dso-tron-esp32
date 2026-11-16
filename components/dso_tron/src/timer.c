@@ -33,7 +33,7 @@ void timer_init(void) {
     TIMG0_T0CONFIG = 0;
 
     /* Set prescaler */
-    TIMG0_T0CONFIG = (TICK_PRESCALER << TIMG0_T0_DIVIDER_S);
+    TIMG0_T0CONFIG = (TICK_PRESCALER << TIMG_T0_DIVIDER_S);
 
     /* Set alarm value for 1 kHz */
     TIMG0_T0ALARMLO = TICK_ALARM_VALUE & 0xFFFFFFFF;

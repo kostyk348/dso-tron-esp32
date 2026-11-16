@@ -27,3 +27,11 @@ void task_init(tcb_t *tcb, const char *name, void (*entry)(void*), void *arg,
                int pri, int core, uint32_t *stack, uint32_t stack_size);
 void task_exit(void);
 tcb_t *task_current(int core);
+
+/* --- планировщик (sched.c): объявления нужны всем, кто его дёргает --- */
+void sched_init(void);
+void sched_start(void);
+void sched_yield(int core);
+void sched_tick(int core);
+void sched_add_ready(tcb_t *tcb);
+int  task_register(tcb_t *tcb);
