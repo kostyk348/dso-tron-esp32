@@ -2,6 +2,7 @@
 #include "sync.h"
 #include <stdio.h>
 #include <string.h>
+#include <math.h>  /* sin() в gen_tone: без объявления -Werror валит сборку */
 
 /* Task stacks (static allocation — ITRON style) */
 #define STACK_SIZE 4096
