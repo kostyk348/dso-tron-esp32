@@ -1,6 +1,8 @@
 #include "task.h"
 #include "sdkconfig.h"
 
+#include <stddef.h>  /* NULL: newlib stdint.h его не приносит, а -Werror это ловит */
+
 #define MAX_TASKS CONFIG_DSO_MAX_TASKS
 #define NUM_PRIOS (TASK_PRI_MAX + 1)
 
